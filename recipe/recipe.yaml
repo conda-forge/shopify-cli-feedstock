@@ -1,6 +1,6 @@
 context:
   name: shopify-cli
-  version: "3.90.1"
+  version: "3.91.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://registry.npmjs.org/@shopify/cli/-/cli-${{ version }}.tgz
-  sha256: a6a7c6d5a47d1be0e9b04c4bce7ab4abb904ad046241ecf89e9dc6421923b0a8
+  sha256: 0ac2632d97e2d63c819bbc85e5837682f1dc156a82de0aee4f62b1e747c31ee1
 
 build:
   noarch: generic
