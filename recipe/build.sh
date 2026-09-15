@@ -16,7 +16,7 @@ mv package.json package.json.bak
 jq 'del(.devDependencies)' package.json.bak > package.json
 
 # Create license report for dependencies
-pnpm install
+pnpm install --dangerously-allow-all-builds
 pnpm-licenses generate-disclaimer --prod --output-file=third-party-licenses.txt
 
 mkdir -p ${PREFIX}/bin
